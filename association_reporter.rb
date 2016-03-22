@@ -149,6 +149,6 @@ module AssociationReporting
   end
 
   def label(str, cond)
-    str && str.colorize(cond ? :green : :red)
+    str && str.to_s.colorize(cond ? :green : :red)
   end
 end
